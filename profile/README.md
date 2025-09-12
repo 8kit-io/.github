@@ -1,4 +1,5 @@
 <div align="center">
+<img src="https://8kit.io/logo.svg" alt="8kit Logo" width="120" height="120">
 
 # 8kit
 
