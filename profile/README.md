@@ -1,8 +1,6 @@
 <div align="center">
 <img src="https://8kit.io/logo.svg" alt="8kit Logo" width="120" height="120">
 
-# 8kit
-
 **The missing toolkit for n8n workflows**
 
 [![License](https://img.shields.io/badge/License-Apache%202.0%20with%20Additional%20Use%20Restrictions-yellow.svg)](https://opensource.org/licenses/Apache-2.0)
