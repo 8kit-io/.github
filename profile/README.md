@@ -117,9 +117,7 @@ graph TB
     A[n8n Workflow] --> B[8kit Nodes]
     B --> C[8kit Service]
     C --> D[Database]
-    C --> E[External APIs]
     F[Admin UI] --> C
-    G[Your Applications] --> C
 ```
 
 ## 📚 Documentation
