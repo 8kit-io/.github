@@ -1,13 +1,15 @@
 <div align="center">
 <img src="https://8kit.io/logo.svg" alt="8kit Logo" width="120" height="120">
 
-**The missing toolkit for n8n workflows**
+**Complete Enterprise Automation Kit for n8n with Proven Data Integration Patterns**
 
-[![License](https://img.shields.io/badge/License-Apache%202.0%20with%20Additional%20Use%20Restrictions-yellow.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/NR8eTfHX)
-[![GitHub](https://img.shields.io/badge/GitHub-8kit--io-181717?logo=github&logoColor=white)](https://github.com/orgs/8kit-io)
+[![License](https://img.shields.io/badge/License-Sustainable%20License-orange.svg)](https://8kit.io/sustainable-license)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/5YxWFhmS)
+[![GitHub](https://img.shields.io/badge/GitHub-8kit--io-181717?logo=github&logoColor=white)](https://github.com/8kit-io)
+[![Docker](https://img.shields.io/badge/Docker-8kit%2F8kit-2496ED?logo=docker&logoColor=white)](https://hub.docker.com/r/8kit/8kit)
+[![npm](https://img.shields.io/badge/npm-n8n--nodes--8kit-CB3837?logo=npm&logoColor=white)](https://www.npmjs.com/package/n8n-nodes-8kit)
 
-*Build reliable, idempotent, and traceable automations with n8n*
+*Build bulletproof n8n workflows with enterprise-grade reliability*
 
 </div>
 
@@ -15,62 +17,82 @@
 
 ## 🚀 What is 8kit?
 
-8kit is a comprehensive toolkit designed to solve the most common challenges in n8n workflow automation. Born from real-world integration experience, it provides the missing pieces for production-ready workflows.
+8kit is a complete enterprise automation kit designed to make n8n workflows production-ready. It provides proven data integration patterns and enterprise-grade reliability features that are essential for building bulletproof automations.
 
 ### The Problem We Solve
 
-When connecting multiple systems with n8n, you quickly face these challenges:
-- **Duplicate Processing** - Orders processed twice, data sent multiple times
-- **ID Mapping** - Different systems use different identifiers
-- **State Management** - No way to track what's already been processed
-- **API Overload** - Unnecessary calls and inefficient data handling
+When building production n8n workflows, you face these critical challenges:
+- **Duplicate Processing** - Same data processed multiple times
+- **ID Resolution** - Mapping identifiers across different systems
+- **Concurrency Issues** - Parallel updates causing data corruption
+- **State Management** - No reliable way to track workflow state
+- **Enterprise Requirements** - Missing production-ready features
 
 ### Our Solution
 
-8kit provides three core components that work together:
+8kit provides a complete automation kit with three integrated components:
 
 <table>
 <tr>
 <td width="33%">
 
-**🔧 8kit Service**
-*Core API Layer*
+**🔧 8kit Server**
+*API & Dashboard Bundle*
 
-- Set tracking and management
-- Bi-directional ID mapping
-- State management and locks
-- Bulk operations support
+- Complete RESTful API for all patterns
+- Web dashboard for monitoring and management
+- Docker image with everything bundled
+- Enterprise-grade reliability
 
-[📦 View Repository](https://github.com/8kit-io/service-8kit-community)
+[🐳 Docker Hub](https://hub.docker.com/r/8kit/8kit)
 
 </td>
 <td width="33%">
 
-**🧩 n8n Nodes**
+**🧩 n8n Node**
 *Custom Workflow Nodes*
 
-- Pre-built nodes for common operations
-- Seamless integration with 8kit service
-- Easy-to-use interface
-- Comprehensive error handling
+- Full support for all 8kit patterns
+- Robust error handling and retry mechanisms
+- Easy integration with n8n workflows
+- Production-ready stability
 
-[📦 View Repository](https://github.com/8kit-io/n8n-node-8kit-community)
+[📦 npm Package](https://www.npmjs.com/package/n8n-nodes-8kit)
 
 </td>
 <td width="33%">
 
-**🖥️ Admin UI**
-*Management Dashboard*
+**📚 Documentation**
+*Complete Guides & Examples*
 
-- Visual monitoring interface
-- Configuration management
-- Usage analytics
+- Comprehensive API documentation
+- Getting started tutorials
+- Real-world examples
+- Best practices guide
 
-[📦 View Repository](https://github.com/8kit-io/ui-8kit-community)
+[📖 View Docs](https://8kit.io/docs)
 
 </td>
 </tr>
 </table>
+
+---
+
+## 🎯 Proven Data Integration Patterns
+
+8kit implements four core patterns that solve the most common integration challenges:
+
+### 1. **Do-once Pattern** - Idempotency
+Prevent duplicate processing with reliable idempotency controls.
+
+### 2. **Data Mapping Pattern** - ID Resolution
+Seamlessly map identifiers across different systems with enterprise-grade reliability.
+
+### 3. **Exclusivity Pattern** - Concurrency Control
+Prevent parallel updates and ensure data consistency with distributed locks.
+
+### 4. **Temporal Pattern** - Time-based Coordination
+Coordinate time-sensitive operations and manage temporal dependencies.
 
 ---
 
@@ -79,84 +101,75 @@ When connecting multiple systems with n8n, you quickly face these challenges:
 Get up and running with 8kit in minutes:
 
 ```bash
-# Clone the service repository
-git clone https://github.com/8kit-io/service-8kit-community.git
-cd service-8kit-community
+# Start 8kit server with Docker
+docker run -d -p 3000:3000 8kit/8kit
 
-# Start with Docker Compose
-docker-compose up -d
+# Install n8n node
+npm install n8n-nodes-8kit
 
-# Install n8n nodes
-npm install @8kit/n8n-nodes
-
-# Access admin UI
+# Access dashboard
 open http://localhost:3000
 ```
 
-## 🎯 Perfect For
-
-- **E-commerce Integrations** - Order sync between Shopify, ERP, and fulfillment
-- **Data Synchronization** - Keep multiple systems in sync reliably
-- **API Orchestration** - Manage complex multi-system workflows
-- **Stateful Workflows** - Track and manage workflow state across executions
-
 ## 🌟 Key Features
 
-- ✅ **Idempotent Operations** - Never process the same data twice
-- ✅ **Bi-directional ID Mapping** - Seamlessly map IDs between systems
-- ✅ **State Management** - Track what's been processed with locks and sets
-- ✅ **Bulk Operations** - Process up to 1000 items efficiently
-- ✅ **Multi-tenant Support** - Isolated data per application
-- ✅ **Admin Dashboard** - Visual monitoring and management
-- ✅ **Docker Ready** - Easy deployment and scaling
+- ✅ **Complete Automation Kit** - n8n node, API server, and dashboard
+- ✅ **Proven Patterns** - Do-once, Data Mapping, Exclusivity, and Temporal
+- ✅ **Enterprise-Grade** - Production-ready reliability and performance
+- ✅ **Easy Integration** - Simple n8n node installation and configuration
+- ✅ **Visual Dashboard** - Monitor patterns and manage configurations
+- ✅ **Docker Ready** - One-command deployment and scaling
+- ✅ **Comprehensive Docs** - Complete guides and real-world examples
 
 ## 🛠️ Architecture
 
 ```mermaid
 graph TB
-    A[n8n Workflow] --> B[8kit Nodes]
-    B --> C[8kit Service]
-    C --> D[Database]
-    F[Admin UI] --> C
+    A[n8n Workflow] --> B[8kit n8n Node]
+    B --> C[8kit Server API]
+    C --> D[8kit Dashboard]
+    C --> E[Pattern Storage]
+    F[External Systems] --> A
 ```
 
 ## 📚 Documentation
 
 - 📖 [Complete Documentation](https://8kit.io/docs)
-- 🚀 [Getting Started Guide](https://8kit.io/docs/getting-started/self-hosting-docker-compose)
-- 🎓 [Hello World Tutorial](https://8kit.io/docs/getting-started/hello-world/print-hello-world-once)
-- 🔧 [API Reference](https://8kit.io/docs/api/authentication)
+- 🚀 [Getting Started Guide](https://8kit.io/docs/getting-started)
+- 🎓 [Pattern Examples](https://8kit.io/docs/8kit-patterns)
+- 🔧 [API Reference](https://8kit.io/docs/api)
+- 🐳 [Docker Setup](https://8kit.io/docs/installation)
 
 ## 🤝 Community & Support
 
-- 💬 [Discord Community](https://discord.com/invite/NR8eTfHX) - Chat with other users and get help
-- 🐛 [Report Issues](https://github.com/8kit-io/service-8kit-community/issues) - Found a bug? Let us know!
-- 💡 [Request Features](https://github.com/8kit-io/service-8kit-community/discussions) - Have an idea? We'd love to hear it!
-- 📝 [Contribute](https://github.com/8kit-io/service-8kit-community/blob/main/CONTRIBUTING.md) - Help us improve 8kit
+- 💬 [Discord Community](https://discord.gg/5YxWFhmS) - Chat with other users and get help
+- 🐛 [Report Issues](https://github.com/8kit-io/8kit/issues) - Found a bug? Let us know!
+- 💡 [Request Features](https://github.com/8kit-io/8kit/discussions) - Have an idea? We'd love to hear it!
+- 📝 [Contribute](https://github.com/8kit-io/8kit/blob/main/CONTRIBUTING.md) - Help us improve 8kit
 
 ## 📄 License
 
-8kit is licensed under the Apache License, Version 2.0 with Additional Use Restrictions. See our [Sustainable License](https://8kit.io/sustainable-license) for details.
+8kit is licensed under our [Sustainable License](https://8kit.io/sustainable-license) model, combining open source and commercial licensing.
 
-**Permitted Uses:**
-- ✅ Internal business use
+**Open Source Use:**
 - ✅ Personal projects and education
-- ✅ Consulting services for client self-hosting
+- ✅ Internal business use
+- ✅ Client consulting (self-hosting)
 
-**Commercial Use:** Requires a commercial license from [Digital Stratagems Limited](mailto:hello@8kit.io)
+**Commercial Use:** Requires a commercial license from [8kit](mailto:hello@8kit.io)
 
 ## 🏢 About
 
 Built with ❤️ by [**STRATAGEMS**](https://stratagems.com) for the n8n community.
 
-We've spent years helping retailers connect their core systems and built 8kit to solve the recurring challenges we faced. Now we're sharing it with the community to make n8n workflows production-ready for everyone.
+We've spent years building production n8n workflows and created 8kit to solve the recurring challenges we faced. Now we're sharing this complete automation kit to make n8n workflows bulletproof for everyone.
 
 ---
 
 <div align="center">
 
-**Ready to build bulletproof automations?**
+**Ready to build bulletproof n8n workflows?**
 
-[🚀 Get Started](https://8kit.io/docs) • [💬 Join Discord](https://discord.com/invite/NR8eTfHX) • [⭐ Star Us](https://github.com/8kit-io/service-8kit-community)
+[🚀 Get Started](https://8kit.io/docs) • [💬 Join Discord](https://discord.gg/5YxWFhmS) • [⭐ Star Us](https://github.com/8kit-io/8kit)
 
 </div>
