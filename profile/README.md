@@ -96,21 +96,6 @@ Coordinate time-sensitive operations and manage temporal dependencies.
 
 ---
 
-## ⚡ Quick Start
-
-Get up and running with 8kit in minutes:
-
-```bash
-# Start 8kit server with Docker
-docker run -d -p 3000:3000 8kit/8kit
-
-# Install n8n node
-npm install n8n-nodes-8kit
-
-# Access dashboard
-open http://localhost:3000
-```
-
 ## 🌟 Key Features
 
 - ✅ **Complete Automation Kit** - n8n node, API server, and dashboard
@@ -121,46 +106,27 @@ open http://localhost:3000
 - ✅ **Docker Ready** - One-command deployment and scaling
 - ✅ **Comprehensive Docs** - Complete guides and real-world examples
 
-## 🛠️ Architecture
-
-```mermaid
-graph TB
-    A[n8n Workflow] --> B[8kit n8n Node]
-    B --> C[8kit Server API]
-    C --> D[8kit Dashboard]
-    C --> E[Pattern Storage]
-    F[External Systems] --> A
-```
-
 ## 📚 Documentation
 
 - 📖 [Complete Documentation](https://8kit.io/docs)
 - 🚀 [Getting Started Guide](https://8kit.io/docs/getting-started)
-- 🎓 [Pattern Examples](https://8kit.io/docs/8kit-patterns)
-- 🔧 [API Reference](https://8kit.io/docs/api)
-- 🐳 [Docker Setup](https://8kit.io/docs/installation)
+- 🎓 [Pattern Examples](https://8kit.io/docs/8kit-patterns/introduction)
 
 ## 🤝 Community & Support
 
 - 💬 [Discord Community](https://discord.gg/5YxWFhmS) - Chat with other users and get help
 - 🐛 [Report Issues](https://github.com/8kit-io/8kit/issues) - Found a bug? Let us know!
 - 💡 [Request Features](https://github.com/8kit-io/8kit/discussions) - Have an idea? We'd love to hear it!
-- 📝 [Contribute](https://github.com/8kit-io/8kit/blob/main/CONTRIBUTING.md) - Help us improve 8kit
 
 ## 📄 License
 
 8kit is licensed under our [Sustainable License](https://8kit.io/sustainable-license) model, combining open source and commercial licensing.
 
-**Open Source Use:**
-- ✅ Personal projects and education
-- ✅ Internal business use
-- ✅ Client consulting (self-hosting)
-
 **Commercial Use:** Requires a commercial license from [8kit](mailto:hello@8kit.io)
 
 ## 🏢 About
 
-Built with ❤️ by [**STRATAGEMS**](https://stratagems.com) for the n8n community.
+Built with ❤️ by [**STRATAGEMS**](https://stratagems.com?utm_source=github-org&utm_medium=readme) for the n8n community.
 
 We've spent years building production n8n workflows and created 8kit to solve the recurring challenges we faced. Now we're sharing this complete automation kit to make n8n workflows bulletproof for everyone.
 
